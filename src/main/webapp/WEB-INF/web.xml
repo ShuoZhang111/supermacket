@@ -7,7 +7,7 @@
 
   <servlet>
     <servlet-name>AdminLogin</servlet-name>
-    <servlet-class>com.shuo.supermacket.member.AdminLogin</servlet-class>
+    <servlet-class>com.shuo.supermacket.member.controller.LoginController</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>AdminLogin</servlet-name>

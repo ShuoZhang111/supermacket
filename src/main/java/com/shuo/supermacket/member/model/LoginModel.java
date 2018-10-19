@@ -1,6 +1,6 @@
 package com.shuo.supermacket.member.model;
 
-public class AdminModel {
+public class LoginModel {
     private Integer id;
     private String name;
     private String password;
