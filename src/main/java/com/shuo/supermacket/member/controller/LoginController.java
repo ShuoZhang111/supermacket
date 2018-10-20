@@ -11,6 +11,7 @@ import com.shuo.supermacket.member.utils.ResultUtil;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.*;
@@ -59,6 +60,8 @@ public class LoginController extends HttpServlet {
 
                 result = ResultUtil.success();
                 out.println(Jackson.toJson(result));
+                HttpSession session = request.getSession();
+                session.setAttribute("isLogin",true);
 
             } else {
 
